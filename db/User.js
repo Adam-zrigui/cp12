@@ -4,12 +4,7 @@ const DeUser = new mongoose.Schema({
         type: String,
         required: true
     },
-    age: {
- type: Number,
-required: true,
-min: 12,
-max: 101
-    },
+  age : Number,
     favFood: [String],  
 })
 const User =  mongoose.model("User" , DeUser)
